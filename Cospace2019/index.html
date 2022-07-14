@@ -1,0 +1,36 @@
+<!doctype html>
+<http>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato" rel="stylesheet"> 
+        <link rel="stylesheet" href="index.css">
+        <title>Cospace Mapper</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Cospace Mapper</h1>
+        </div><br>
+        <div id="mapdiv">
+            <canvas width="600" height="400" id="mapper"></canvas>
+        </div>
+        <div id="controls">
+            <button id="clear">Clear</button>
+            <button id="interest">Interest</button>
+            <button id="wall">Wall</button>
+            <button id="deposit">Deposit</button>
+            <button id="prohibited">Prohibited</button>
+            <label>X: </label>
+            <input id="xVal" value="8" size = 4>
+            <label>Y: </label>
+            <input id="yVal" value="8" size = 4>
+            <button id="change">Change</button>
+            <button id="import">Import</button>
+            <button id="export">Export</button>
+            <button id="overlay">Show overlay</button>
+            <input type="file" id="loadImage" name="loadImage" accept="image/png, image/jpeg">
+            <div id="outputDiv">
+                <textarea id="io" rows="6"></textarea>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</http>

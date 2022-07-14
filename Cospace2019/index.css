@@ -1,0 +1,181 @@
+body, div, canvas, span, p, a, li, label, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(187, 199, 197);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: Segoe UI, 'Lato', sans-serif;
+}
+
+p, a, li, label, button, input {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 76, 130);
+}
+
+li {
+    list-style: none;
+}
+
+label {
+    padding: 5px;
+}
+
+canvas {
+    box-shadow: 1px 1px 5px black;
+}
+
+button, input {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(72, 72, 72);
+}
+
+#header {
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px rgb(0, 119, 255) solid;
+}
+
+button {
+    border: 1px rgb(182, 58, 0) solid;
+    text-emphasis: bold;
+    background-color: rgb(255, 81, 0);
+    color: white;
+}
+
+button:active {
+    box-shadow: 0px 0px 5px black inset;
+}
+
+button:hover {
+    background-color: rgb(190, 60, 0);
+    border: 1px rgb(124, 39, 0) solid;
+}
+
+input {
+    border: 1px rgb(127, 127, 127) solid;
+    text-align: center;
+}
+
+#contents {
+    padding: 20px;
+}
+
+#mapdiv {
+    text-align: center;
+}
+
+#information {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#clear {
+    background-color: rgb(230, 230, 230);
+    border: 1px rgb(190, 190, 190) solid;
+    color: black;
+}
+
+#clear:hover {
+    background-color: rgb(175, 175, 175);
+    border: 1px rgb(105, 105, 105) solid;
+}
+
+#interest {
+    background-color: rgb(186, 0, 117);
+    border: 1px rgb(143, 0, 90) solid;
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#interest:hover {
+    animation-duration: 2s;
+}
+
+#wall {
+    background-color: rgb(127, 127, 127);
+    border: 1px rgb(146, 146, 146) solid;
+}
+
+#wall:hover {
+    background-color: rgb(80, 80, 80);
+    border: 1px rgb(49, 49, 49) solid;
+}
+
+#deposit {
+    background-color: rgb(255, 106, 0);
+    border: 1px rgb(197, 82, 0) solid;
+}
+
+#deposit:hover {
+    background-color: rgb(173, 72, 0);
+    border: 1px rgb(112, 47, 0) solid;
+}
+
+#prohibited {
+    background-color: rgb(255, 225, 0);
+    border: 1px rgb(211, 186, 0) solid;
+    color: black;
+}
+
+#prohibited:hover {
+    background-color: rgb(184, 162, 0);
+    border: 1px rgb(148, 131, 0) solid;
+    color: white;
+}
+
+#io {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 0;
+    box-shadow: 2px 2px 2px black;
+    width: 70%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+@keyframes rainbow {
+    0%   {
+        background-color: rgb(85, 255, 0);
+        border: 1px rgb(58, 175, 0) solid;
+    }
+    25%  {
+        background-color: rgb(0, 213, 255);
+        border: 1px rgb(0, 147, 177) solid;
+        
+    }
+    50%  {
+        background-color: rgb(171, 0, 255);
+        border: 1px rgb(120, 0, 180) solid;
+    }
+    75%  {
+        background-color: rgb(0, 213, 255);
+        border: 1px rgb(0, 147, 177) solid;
+    }
+    100% {
+        background-color: rgb(85, 255, 0);
+        border: 1px rgb(58, 175, 0) solid;
+    }
+}
